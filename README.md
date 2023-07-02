@@ -15,7 +15,7 @@ This is a simple bash script for managing ZFS Datasets. The script generates a l
 
 ## Limitations
 
-The script currently only supports a one-level depth directory structure under the dataset path. If your setup requires deeper exploration, you may need to modify the script.
+The script currently only supports a one-level depth directory structure under the dataset path.
 
 ## Contributing
 
