@@ -35,7 +35,7 @@ IFS=$oldIFS
 echo -e "\n**Folders are**"
 folders_found=0
 for folder in "${all_directories[@]}"; do
-    if ! grep -Fxq "$folder" <<< "${zfs_datasets[@]}"; then
+    if ! grep -Fxq "$folder" <<< "$zfs_datasets"; then
         echo "$folder"
         folders_found=1
     fi
