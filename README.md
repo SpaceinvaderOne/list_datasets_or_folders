@@ -4,7 +4,7 @@ This is a simple bash script for managing ZFS Datasets. The script generates a l
 
 ## How to Use
 
-1. Set `source_dataset` to your source dataset (default example is `darkmatter_disks/domains`).
+1. Set `source_dataset` to your source dataset (This is array where you can list the paths of datasets that should be checked by the script).
 2. Run the script to list all ZFS datasets and regular directories.
 
 ## What the Script Does
