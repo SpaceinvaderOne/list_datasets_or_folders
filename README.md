@@ -1,6 +1,6 @@
-# ZFS Dataset Management
+# ZFS Dataset content lister
 
-This is a simple bash script for managing ZFS Datasets. The script generates a list of ZFS datasets under a specific source directory and lists all regular directories under a mount point.
+This is a simple bash script for managing ZFS Datasets. The script generates a list of ZFS datasets under a specific source directory and lists all regular directories under a parent dataset.
 
 ## How to Use
 
@@ -9,15 +9,13 @@ This is a simple bash script for managing ZFS Datasets. The script generates a l
 
 ## What the Script Does
 
-- The script first adds the mount point to the dataset path.
-- It then retrieves the ZFS datasets under the source dataset, formatting the output to print only the last field of the '/' delimited string and excluding the first line of the output.
 - The script prints the retrieved datasets. If no datasets are found, it will print "There are no datasets".
 - The script then finds all directories (only one level deep) under the dataset path.
 - After that, it prints all the folders that are not ZFS datasets. If there are no such folders, it will print "There are no folders".
 
 ## Limitations
 
-The script currently only supports a one-level depth directory structure under the dataset path. If your setup requires deeper exploration, you may need to modify the script.
+The script currently only supports a one-level depth directory structure under the dataset path.
 
 ## Contributing
 
